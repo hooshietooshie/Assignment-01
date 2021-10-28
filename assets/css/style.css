@@ -1,0 +1,71 @@
+.background {
+  background: url("../images/2582050.jpg") center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+.text-box {
+  color: var(--color-primary);
+  position: absolute;
+  bottom: 8%;
+}
+
+.info {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.info__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.info__text--heading {
+  font-size: 3rem;
+}
+
+.info__text--edu {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.info__text--hobbies {
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+}
+
+.info__image {
+  height: auto;
+  cursor: pointer;
+  width: 100%;
+  transform: scale(1.01);
+  border-radius: 20%;
+}
+
+.info__image--container {
+  max-width: 23%;
+  padding: 0;
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 20%;
+  border: 3px solid var(--color-primary);
+  box-shadow: 5px 6px 6px 0px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.info__image--container:hover {
+  box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px) scale(1.1);
+  padding: 2rem;
+}

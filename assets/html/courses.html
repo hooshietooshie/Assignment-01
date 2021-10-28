@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+    <meta charset="UTF-8" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="../css/courses.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="background"></div>
+      <nav>
+        <div class="logo__container">
+          <a href="/"> <img src="../images/logo.png" class="logo" /></a>
+        </div>
+        <div class="searchbar">
+          <input type="text" placeholder="Search" />
+          <div class="searchbar__icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 125"
+              enable-background="new 0 0 100 100"
+              xml:space="preserve"
+            >
+              <g>
+                <path
+                  d="M36.202,12.527c-12.895,0-23.384,10.492-23.384,23.388c0,0.302,0.245,0.547,0.546,0.547c0.302,0,0.547-0.245,0.547-0.547   c0-12.293,10-22.295,22.291-22.295c0.302,0,0.546-0.245,0.546-0.547C36.749,12.772,36.504,12.527,36.202,12.527z"
+                />
+                <path
+                  d="M98.82,92.337L79.354,72.872c-1.142-1.143-2.754-1.503-4.211-1.117L63.547,60.158c-0.211-0.212-0.456-0.371-0.717-0.478   c5.647-6.318,9.09-14.648,9.09-23.769c0-19.693-16.023-35.714-35.718-35.714c-19.692,0-35.711,16.021-35.711,35.714   c0,19.692,16.02,35.713,35.711,35.713c9.124,0,17.455-3.443,23.775-9.092c0.106,0.261,0.266,0.505,0.478,0.717l11.598,11.597   c-0.384,1.456-0.023,3.067,1.118,4.209l19.465,19.466c0.854,0.854,1.974,1.281,3.092,1.281c1.12,0,2.24-0.427,3.093-1.281   C100.528,96.814,100.528,94.045,98.82,92.337z M36.202,68.345c-17.883,0-32.432-14.55-32.432-32.433   c0-17.884,14.549-32.434,32.432-32.434c17.886,0,32.438,14.55,32.438,32.434C68.64,53.795,54.088,68.345,36.202,68.345z"
+                />
+              </g>
+            </svg>
+          </div>
+        </div>
+        <ul>
+          <li><a href="./resume.html">Resume</a></li>
+          <li><a href="./courses.html" class="current--page">Courses</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar">
+        <div class="icons">
+          <a href="mailto:harshang.shah1981@gmail.com" target="_blank">
+            <img src="../images/email.png"
+          /></a>
+          <a href="https://instagram.com/hooshietooshie1" target="_blank">
+            <img src="../images/instagram.png" />
+          </a>
+          <a href="https://github.com/hooshietooshie" target="_blank">
+            <img src="../images/github.png" />
+          </a>
+          <a href="https://www.algonquincollege.com/" target="_blank">
+            <img src="../images/college_logo.png" class="college" />
+          </a>
+        </div>
+      </div>
+      <div class="secondary__nav">
+        <div class="sorting__container">
+          <h3>Sorting :</h3>
+          <div class="sorting__toggle">
+            <input type="radio" name="sorting" id="down" checked />
+            <label for="down">
+              <div class="lower selected">
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 10.88 10.21"
+                  style="enable-background: new 0 0 10.88 10.21"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: #231f20;
+                    }
+                  </style>
+                  <path
+                    class="st0"
+                    d="M6.59,1.04H0.56c-0.22,0-0.4-0.18-0.4-0.4v0c0-0.22,0.18-0.4,0.4-0.4h6.03c0.22,0,0.4,0.18,0.4,0.4v0
+	C6.99,0.86,6.81,1.04,6.59,1.04z"
+                  />
+                  <path
+                    class="st0"
+                    d="M5.83,4.13H1.36c-0.22,0-0.4-0.18-0.4-0.4V3.59c0-0.22,0.18-0.4,0.4-0.4l4.47,0c0.22,0,0.4,0.18,0.4,0.4v0.14
+	C6.23,3.95,6.05,4.13,5.83,4.13z"
+                  />
+                  <path
+                    class="st0"
+                    d="M5.08,7.09H2.17c-0.22,0-0.4-0.18-0.4-0.4v0c0-0.22,0.18-0.4,0.4-0.4h2.91c0.22,0,0.4,0.18,0.4,0.4v0
+	C5.48,6.91,5.3,7.09,5.08,7.09z"
+                  />
+                  <path
+                    class="st0"
+                    d="M4.41,10.08H2.84c-0.22,0-0.4-0.18-0.4-0.4v0c0-0.22,0.18-0.4,0.4-0.4h1.57c0.22,0,0.4,0.18,0.4,0.4v0
+	C4.81,9.9,4.63,10.08,4.41,10.08z"
+                  />
+                  <path
+                    class="st0"
+                    d="M8.5,8.77V0.57c0,0,0.3-0.56,0.72,0v8.19l0.87-0.87c0,0,0.85-0.31,0.55,0.55L9.13,9.97c0,0-0.35,0.2-0.49,0
+	L7.03,8.36c0,0-0.17-0.71,0.49-0.49L8.5,8.77z"
+                  />
+                </svg>
+              </div>
+            </label>
+
+            <input type="radio" name="sorting" id="up" />
+            <label for="up">
+              <div class="upper">
+                <svg
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 10.88 10.21"
+                  style="enable-background: new 0 0 10.88 10.21"
+                  xml:space="preserve"
+                >
+                  <style type="text/css">
+                    .st0 {
+                      fill: #231f20;
+                    }
+                  </style>
+                  <path
+                    class="st0"
+                    d="M6.59,1.04H0.56c-0.22,0-0.4-0.18-0.4-0.4v0c0-0.22,0.18-0.4,0.4-0.4h6.03c0.22,0,0.4,0.18,0.4,0.4v0
+	C6.99,0.86,6.81,1.04,6.59,1.04z"
+                  />
+                  <path
+                    class="st0"
+                    d="M5.83,4.13H1.36c-0.22,0-0.4-0.18-0.4-0.4V3.59c0-0.22,0.18-0.4,0.4-0.4l4.47,0c0.22,0,0.4,0.18,0.4,0.4v0.14
+	C6.23,3.95,6.05,4.13,5.83,4.13z"
+                  />
+                  <path
+                    class="st0"
+                    d="M5.08,7.09H2.17c-0.22,0-0.4-0.18-0.4-0.4v0c0-0.22,0.18-0.4,0.4-0.4h2.91c0.22,0,0.4,0.18,0.4,0.4v0
+	C5.48,6.91,5.3,7.09,5.08,7.09z"
+                  />
+                  <path
+                    class="st0"
+                    d="M4.41,10.08H2.84c-0.22,0-0.4-0.18-0.4-0.4v0c0-0.22,0.18-0.4,0.4-0.4h1.57c0.22,0,0.4,0.18,0.4,0.4v0
+	C4.81,9.9,4.63,10.08,4.41,10.08z"
+                  />
+                  <path
+                    class="st0"
+                    d="M8.5,8.77V0.57c0,0,0.3-0.56,0.72,0v8.19l0.87-0.87c0,0,0.85-0.31,0.55,0.55L9.13,9.97c0,0-0.35,0.2-0.49,0
+	L7.03,8.36c0,0-0.17-0.71,0.49-0.49L8.5,8.77z"
+                  />
+                </svg>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="filter__container">
+          <h3>Filter :</h3>
+          <div class="filter__btns">
+            <div class="filter">
+              <input
+                type="checkbox"
+                name="filter"
+                id="lvl1"
+                class="filter__label"
+              />
+              <label for="lvl1">
+                <div class="level">I</div>
+              </label>
+            </div>
+            <div class="filter">
+              <input
+                type="checkbox"
+                name="filter"
+                id="lvl2"
+                class="filter__label"
+              />
+              <label for="lvl2">
+                <div class="level">II</div>
+              </label>
+            </div>
+            <div class="filter">
+              <input
+                type="checkbox"
+                name="filter"
+                id="lvl3"
+                class="filter__label"
+              />
+              <label for="lvl3">
+                <div class="level">III</div>
+              </label>
+            </div>
+            <div class="filter">
+              <input
+                type="checkbox"
+                name="filter"
+                id="lvl4"
+                class="filter__label"
+              />
+              <label for="lvl4">
+                <div class="level">IV</div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card__container">
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/CST8101.jpg" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Computer Essentials</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8101</h3>
+              <span class="card__course--level">I</span>
+            </div>
+            <p class="card__desc">
+              A combination of Linux and Windows command prompt commands
+              alongside the usage of Virtual Machines.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/tech_math.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Technical Math for CS</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">MAT8001C</h3>
+              <span class="card__course--level">I</span>
+            </div>
+            <p class="card__desc">
+              Mathematics and logic required for coding and algorithms.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/CST8116.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Intro to Computer Programming</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8116</h3>
+              <span class="card__course--level">I</span>
+            </div>
+            <p class="card__desc">Kickstarter course for Java.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/none.jpg" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">
+              Achieving Success in Changing Environments
+            </h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8300</h3>
+              <span class="card__course--level">I</span>
+            </div>
+            <p class="card__desc">
+              Learn about your professional surroundings and useful ways to
+              improve your workplace.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/CST2355.jpg" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Intro to Database</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8215</h3>
+              <span class="card__course--level">I</span>
+            </div>
+            <p class="card__desc">
+              Basic SQL commands and engineering databases in PostgreSQL and
+              PGModeler.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/none.jpg" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Communications</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8101</h3>
+              <span class="card__course--level">I</span>
+            </div>
+            <p class="card__desc">
+              Learn different ways oof effective communications and create a
+              strong hold over soft skills.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/CST8102.jpg" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">
+              Operating Systems Fundamentals (GNU/Linux)
+            </h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8102</h3>
+              <span class="card__course--level">II</span>
+            </div>
+            <p class="card__desc">
+              Usage of virtual machines to learn Linux terminal commands.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/GEN1957.jpg" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Science Fiction</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">GEN1957</h3>
+              <span class="card__course--level">II</span>
+            </div>
+            <p class="card__desc">
+              Study, evaluate and learn about different varieties of science
+              fiction.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/CST8284.jpg" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Object Oriented Programming (Java)</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8284</h3>
+              <span class="card__course--level">II</span>
+            </div>
+            <p class="card__desc">Java, but higher level and advanced code.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/CST8285.jpg" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Web Programming</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8285</h3>
+              <span class="card__course--level">II</span>
+            </div>
+            <p class="card__desc">
+              An amalgamation of HTML, CSS and Javascript to create beautiful
+              working websites.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/CST2355.jpg" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Database Systems</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST2355</h3>
+              <span class="card__course--level">II</span>
+            </div>
+            <p class="card__desc">
+              Managing and creating databases along with it's functions using
+              Microsoft SQL Server Management Studio and Microsoft Access.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/none.jpg" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">
+              Technical Communications for English Tech
+            </h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">ENL2019T</h3>
+              <span class="card__course--level">II</span>
+            </div>
+            <p class="card__desc">
+              Communications course, even more effective!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/tbd.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Business Programming</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8283</h3>
+              <span class="card__course--level">III</span>
+            </div>
+            <p class="card__desc">Something related to COBOL?</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/tbd.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Network Programming</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8109</h3>
+              <span class="card__course--level">III</span>
+            </div>
+            <p class="card__desc">Unknown</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/tbd.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Mobile Graphical Interface Programming</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST2335</h3>
+              <span class="card__course--level">III</span>
+            </div>
+            <p class="card__desc">Unknown.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/tbd.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">
+              Object-Oriented Programming with Designs Patterns
+            </h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8288</h3>
+              <span class="card__course--level">III</span>
+            </div>
+            <p class="card__desc">Unknown.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/tbd.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Systems Analysis and Designs</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST2234</h3>
+              <span class="card__course--level">III</span>
+            </div>
+            <p class="card__desc">Unkown.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/tbd.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">General Education Elective</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">GED0336</h3>
+              <span class="card__course--level">IV</span>
+            </div>
+            <p class="card__desc">Unkown.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/tbd.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Software Development Project</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8334</h3>
+              <span class="card__course--level">IV</span>
+            </div>
+            <p class="card__desc">Unkown.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/tbd.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Enterprise Applications Programming</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8277</h3>
+              <span class="card__course--level">IV</span>
+            </div>
+            <p class="card__desc">Unkown.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/tbd.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Advanced Database Topics</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8276</h3>
+              <span class="card__course--level">IV</span>
+            </div>
+            <p class="card__desc">Unkown.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__image">
+            <img src="./../images/tbd.png" />
+          </div>
+          <div class="card__content">
+            <h4 class="card__name">Programming Language Research Project</h4>
+            <div class="card__course--info">
+              <h3 class="card__course--id">CST8333</h3>
+              <span class="card__course--level">IV</span>
+            </div>
+            <p class="card__desc">Unkown.</p>
+          </div>
+        </div>
+      </div>
+      <p class="footer">Copyright © 2021 Harshang Shah</p>
+    </div>
+  </body>
+</html>

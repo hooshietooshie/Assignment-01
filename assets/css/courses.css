@@ -1,0 +1,199 @@
+.background {
+  background: url("../images/coursesbg.webp") center fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+/*
+Secondary NavBar
+*/
+.secondary__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.secondary__nav h3 {
+  font-size: 1.6rem;
+  width: 100%;
+}
+/*
+Sorting
+*/
+.sorting__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sorting--text {
+  font-size: 2rem;
+}
+.sorting__toggle {
+  height: 4rem;
+  max-width: 13rem;
+  margin: 1rem;
+  width: 100%;
+  border-radius: 10rem;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2),
+    -2px -2px 2px rgba(255, 255, 255, 0.5);
+  display: flex;
+}
+.sorting__toggle label {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  border-radius: 10rem;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+.sorting__toggle input[type="radio"]:checked + label {
+  box-shadow: inset 1px 2px 6px rgba(0, 0, 0, 0.2),
+    inset -6px -8px 3px rgba(255, 255, 255, 0.3),
+    2px 2px 3px rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+}
+.sorting__toggle input[type="radio"]:checked + label div svg path {
+  fill: black;
+}
+.sorting__toggle div {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  border: none;
+}
+.sorting__toggle div svg {
+  height: 100%;
+}
+.sorting__toggle div svg path {
+  transition: all 0.1s ease-in-out;
+  fill: rgba(0, 0, 0, 0.5);
+}
+.sorting__toggle .upper {
+  transform: rotate(180deg);
+}
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+/*
+Filter
+*/
+.filter__container,
+.filter__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter__btns {
+  margin-left: 1rem;
+}
+.filter__label:checked + label div {
+  box-shadow: inset 3px 5px 6px rgba(0, 0, 0, 0.2), inset 1px 1px 5px 2px white,
+    2px 2px 3px rgba(255, 255, 255, 0.2);
+}
+.level {
+  height: 3rem;
+  margin-right: 1rem;
+  width: 3rem;
+  font-size: 1.5rem;
+  background: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2),
+    -2px -2px 2px rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.level:active {
+  box-shadow: inset 3px 5px 6px rgba(0, 0, 0, 0.2), inset 1px 1px 5px 2px white,
+    2px 2px 3px rgba(255, 255, 255, 0.2);
+}
+.level:focus {
+  border: 1px solid white;
+}
+/*
+Card
+*/
+.card__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  grid-template-rows: masonry;
+}
+.card {
+  height: max-content;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 3rem;
+  display: block;
+  overflow: hidden;
+  font-size: 1.4rem;
+  box-shadow: 5px 4px 3px rgba(0, 0, 0, 0.2),
+    -4px -6px 6px 3px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s 100ms ease-out;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-1rem);
+  box-shadow: 3px 8px 5px 3px rgba(0, 0, 0, 0.1),
+    -6px -8px 8px 6px rgba(255, 255, 255, 0.5);
+}
+.card__content {
+  padding: 1rem 1rem 3rem;
+  border-radius: 3rem;
+  box-shadow: inset -7px -4px 6px 5px rgba(255, 255, 255, 0.3),
+    inset 5px 4px 2px rgba(0, 0, 0, 0.1);
+}
+.card__image {
+  width: 100%;
+  display: flex;
+}
+.card__image img {
+  width: 100%;
+}
+.card__name {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+.card__course--id {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.card__course--level {
+  font-size: 1.5rem;
+  font-weight: normal;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.2),
+    -2px -2px 2px rgba(255, 255, 255, 0.5);
+}
+.card__course--info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.card__desc {
+  max-width: 28rem;
+  font-size: 1.3rem;
+}
+.card__image img {
+  width: 100%;
+}

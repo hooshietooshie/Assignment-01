@@ -1,0 +1,133 @@
+.background {
+  background: url("../images/1756752.jpg") center fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+.card {
+  border: 2px solid #000000;
+  width: 100%;
+  height: max-content;
+  padding: 7rem 3rem 4.6rem;
+  border-radius: 1rem;
+}
+.card__container {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: masonry;
+  gap: 1.5rem;
+  height: 100%;
+  align-content: start;
+}
+.card__header {
+  display: flex;
+  justify-content: space-between;
+}
+.card__header--text {
+  font-size: 2.8rem;
+  position: relative;
+}
+.card__header--text:before {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: #199cdb;
+  top: -2rem;
+}
+.card__header--icon {
+  display: inline-block;
+  height: 2.8rem;
+  width: 2.8rem;
+}
+.card__header--icon img,
+.card__header--icon svg {
+  height: 4rem;
+  width: 4rem;
+}
+
+.card__timeline {
+  position: relative;
+  margin-top: 4rem;
+  width: 100%;
+}
+.card__timeline:before {
+  background: #fff;
+  bottom: 0;
+  content: "";
+  left: 1px;
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+}
+.card__ele {
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-top: 30px;
+  position: relative;
+}
+.card__ele::before {
+  background: #199cdb;
+  content: "";
+  height: 14px;
+  left: -5px;
+  position: absolute;
+  text-align: center;
+  top: 33px;
+  width: 14px;
+  border-radius: 50%;
+}
+.card__ele--heading {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.card__ele--header {
+  margin-bottom: 0.5rem;
+}
+.card__ele--time,
+.card__ele--desc {
+  font-size: 1.4rem;
+}
+.card__ele--time span,
+.card__ele--desc span {
+  font-size: 1.4rem;
+}
+.card__skills {
+  margin-bottom: 1.5rem;
+}
+.card__skills--container {
+  margin-top: 4rem;
+}
+.card__skills--heading {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.card__skills--level {
+  width: 100%;
+  display: flex;
+}
+.card__skills--level span {
+  width: 4.5rem;
+  height: 2px;
+  display: inline-block;
+  background: #199cdb;
+  margin-right: 1rem;
+}
+.card__skills--level .transparent {
+  opacity: 0.1;
+  background: #888888;
+}
+
+.tag {
+  background: #199cdb;
+  padding: 0.1rem 1.2rem;
+  color: #fff;
+  border-radius: 0.6rem;
+}
